@@ -1,0 +1,81 @@
+"""
+Limpieza, anonimización y frecuencias descriptivas de la encuesta de percepción
+(Cafeterías de especialidad y valorización - Bogotá, Haciendo Economía 2026-2).
+
+Uso (desde la raíz del repositorio):
+    python scripts/limpieza_analisis.py ruta/a/Base_Datos_RAW_Entrega4.xlsx
+
+Entradas : hoja "1_Datos_RAW_Completos_68" del libro RAW (68 registros brutos).
+Salidas  : datos/cruda/encuesta_cruda_anonimizada.csv   (68 filas, sin nombres de personas)
+           datos/limpia/encuesta_limpia.csv             (57 filas válidas y georreferenciadas)
+           resultados/frecuencias_p1_p9.csv             (frecuencias de las 9 preguntas)
+La base cruda original NO se sube al repositorio: contiene nombres de personas.
+"""
+import sys
+from pathlib import Path
+import pandas as pd
+
+RAW_PATH = Path(sys.argv[1] if len(sys.argv) > 1 else "Base_Datos_RAW_Entrega4.xlsx")
+HOJA_RAW = "1_Datos_RAW_Completos_68"
+ESTADOS_VALIDOS = ["En muestra (14 locales)", "Adicional del marco (25 locales)"]
+
+raw = pd.read_excel(RAW_PATH, sheet_name=HOJA_RAW)
+raw.columns = [c.strip() for c in raw.columns]          # quita espacios sobrantes en encabezados
+
+# ---- Renombrar columnas a nombres cortos (ver documentacion/diccionario_variables.md)
+preguntas = [c for c in raw.columns if c[:2] in {f"{i}." for i in range(1, 10)}]
+renombres = {c: f"p{c[0]}" for c in preguntas}
+renombres["¿Acepta participar voluntariamente?"] = "consentimiento"
+renombres["Marca temporal"] = "marca_temporal"
+raw = raw.rename(columns=renombres)
+
+# ---- 1) Anonimización
+# Los encuestadores se reemplazan por códigos (E1..E4, orden alfabético; el mapeo no se guarda).
+nombres_enc = sorted(raw["encuestador_estandarizado"].dropna().unique())
+cod_enc = {n: f"E{i+1}" for i, n in enumerate(nombres_enc)}
+raw["encuestador_cod"] = raw["encuestador_estandarizado"].map(cod_enc)
+
+# En registros fuera del marco, "Nombre del local" contiene nombres de personas / empresas: se oculta.
+fuera = raw["estado_registro_raw"].str.startswith("Fuera", na=False)
+raw["Nombre del local"] = raw["Nombre del local"].astype(str).str.strip()
+raw.loc[fuera, "Nombre del local"] = "[anonimizado - fuera de marco]"
+# Registros con la ruta completa pegada por error: texto largo sin valor analítico.
+error_tipeo = raw["estado_registro_raw"].str.startswith("N/A", na=False)
+raw.loc[error_tipeo, ["Nombre del local", "Barrio"]] = "[texto de ruta pegado por error]"
+
+raw_pub = raw.drop(columns=["Nombre del encuestador", "encuestador_estandarizado"])
+raw_pub = raw_pub.rename(columns={"Nombre del local": "nombre_local_digitado", "Barrio": "barrio_digitado"})
+
+# ---- 2) Base limpia: registros válidos, dentro del marco y georreferenciados
+limpia = raw_pub[raw_pub["estado_registro_raw"].isin(ESTADOS_VALIDOS)
+                 & raw_pub["latitud"].notna()].copy()
+limpia = limpia.drop(columns=["nombre_local_digitado", "barrio_digitado", "nota_auditoria_cruce"])
+
+# ---- 3) Controles de calidad
+assert (limpia["consentimiento"].str.startswith("Sí")).all(), "Hay registros sin consentimiento"
+assert limpia["id_encuesta"].is_unique, "id_encuesta duplicado"
+assert limpia[["id_cafe", "zona_estudio", "barrio_verificado_catastro"]].notna().all().all()
+assert not limpia[[f"p{i}" for i in range(1, 10)]].isna().any().any(), "Hay respuestas vacías"
+
+# ---- 4) Frecuencias P1-P9
+filas = []
+for i in range(1, 10):
+    vc = limpia[f"p{i}"].value_counts()
+    for categoria, n in vc.items():
+        filas.append({"pregunta": f"P{i}", "categoria": categoria, "n": n,
+                      "pct": round(100 * n / len(limpia), 1)})
+frec = pd.DataFrame(filas)
+
+# ---- 5) Guardar
+Path("datos/cruda").mkdir(parents=True, exist_ok=True)
+Path("datos/limpia").mkdir(parents=True, exist_ok=True)
+Path("resultados").mkdir(parents=True, exist_ok=True)
+raw_pub.to_csv("datos/cruda/encuesta_cruda_anonimizada.csv", index=False, encoding="utf-8-sig")
+limpia.to_csv("datos/limpia/encuesta_limpia.csv", index=False, encoding="utf-8-sig")
+frec.to_csv("resultados/frecuencias_p1_p9.csv", index=False, encoding="utf-8-sig")
+
+print(f"Registros brutos: {len(raw)} | válidos y georreferenciados: {len(limpia)} | "
+      f"excluidos: {len(raw) - len(limpia)}")
+print(raw["estado_registro_raw"].value_counts().to_string())
+print(f"Locales distintos en la base limpia: {limpia['id_cafe'].nunique()}")
+print(f"Zonas: {limpia['zona_estudio'].nunique()} | Barrios (catastro): {limpia['barrio_verificado_catastro'].nunique()}")

@@ -1,0 +1,102 @@
+# Diccionario de variables
+
+Proyecto: Distribución geográfica de cafeterías de especialidad, valor del suelo y valorización en barrios de Bogotá (Haciendo Economía 2026-2, Universidad del Rosario).
+
+Archivos: `datos/cruda/encuesta_cruda_anonimizada.csv` (68 registros) y `datos/limpia/encuesta_limpia.csv` (57 registros). La limpia no incluye `nombre_local_digitado`, `barrio_digitado` ni `nota_auditoria_cruce`.
+
+## Texto de consentimiento del formulario
+
+> Estudio académico de la Universidad del Rosario (Haciendo Economía 2026-2). Esta encuesta es voluntaria y anónima, y dura unos 3 minutos. No recolectamos datos personales ni sensibles (Ley 1581 de 2012 y Decreto 1377 de 2013); sus respuestas se usan solo con fines académicos y se analizan de forma agrupada. Puede omitir cualquier pregunta o retirarse en cualquier momento. Puede responderla tanto si vive o trabaja en el sector como si solo lo visita. No hay respuestas buenas ni malas: nos interesa lo que usted ha visto y sentido. Marque una sola opción por pregunta, salvo que se indique otra cosa.
+
+## Variables de identificación y de cruce
+
+| Variable | Descripción | Tipo |
+|---|---|---|
+| `id_encuesta` | Identificador de la respuesta (ENC_001…ENC_068) | texto |
+| `marca_temporal` | Fecha y hora de envío del formulario | fecha-hora |
+| `consentimiento` | Aceptación voluntaria de participar (en toda la base: «Sí, acepto») | categórica |
+| `encuestador_cod` | Código del encuestador (E1–E4); los nombres no se publican | categórica |
+| `estado_registro_raw` | Clasificación del registro tras el cruce (en muestra / adicional del marco / fuera de marco / error de digitación) | categórica |
+| `nombre_local_digitado` | Nombre del local tal como se escribió (solo en la base cruda; en registros fuera de marco aparece anonimizado) | texto |
+| `barrio_digitado` | Barrio tal como se escribió (solo en la base cruda) | texto |
+| `nota_auditoria_cruce` | Nota sobre cómo se cruzó el registro con el listado de locales (solo en la base cruda) | texto |
+| `id_cafe` | Identificador del local en el marco de 25 cafeterías (CAF_001…CAF_025) | texto |
+| `nombre_establecimiento_verificado` | Nombre oficial del establecimiento verificado | texto |
+| `zona_estudio` | Una de las 7 zonas de estudio | categórica |
+| `barrio_verificado_catastro` | Barrio verificado con catastro | categórica |
+| `localidad` | Localidad de Bogotá | categórica |
+| `cod_barrio` | Código del barrio | texto |
+| `direccion_oficial_verificada` | Dirección del establecimiento | texto |
+| `latitud / longitud` | Coordenadas WGS84 del establecimiento | numérica |
+| `valor_suelo_m2_2025_cop` | Valor del suelo por m² en 2025 (COP), según UAECD | numérica |
+| `var_valor_suelo_16_25_pct` | Variación del valor del suelo 2016–2025 (%) | numérica |
+| `precio_filtrado_ref_cop` | Precio de referencia del café filtrado (COP) | numérica |
+| `rating_gmaps` | Calificación en Google Maps | numérica |
+| `muestra_campo` | Si el local pertenece a los 14 locales del protocolo de campo (Sí/No) | categórica |
+
+## Preguntas de la encuesta (p1–p9) y categorías de respuesta observadas
+
+Frecuencias en `resultados/frecuencias_p1_p9.csv` (base limpia, n = 57).
+
+### p1. ¿Cuál es su relación con este sector?
+
+- Vengo de vez en cuando o es la primera vez que vengo. (n = 18)
+- No vivo ni trabajo aquí, pero vengo con frecuencia. (n = 15)
+- Trabajo o estudio aquí. (n = 14)
+- Vivo aquí. (n = 10)
+
+### p2. En los últimos 3 años, ¿qué tipo de negocios nuevos ha visto abrir en este sector?
+
+- Sobre todo cafés, restaurantes modernos o tiendas de diseño. (n = 34)
+- No conozco el sector lo suficiente para saberlo. (n = 12)
+- Casi no he visto negocios nuevos. (n = 6)
+- Sobre todo negocios de siempre (tiendas de barrio, panaderías, talleres). (n = 5)
+
+### p3. ¿Con qué frecuencia va a cafés o restaurantes nuevos de este sector?
+
+- Muy rara vez, o solo si me invitan. (n = 32)
+- Casi todos los días o varias veces por semana. (n = 20)
+- Nunca o casi nunca. (n = 5)
+
+### p4. ¿Qué es lo que más lo motiva a venir o pasar por esta zona?
+
+- Que me queda cerca de mi casa, trabajo o estudio. (n = 17)
+- Que el lugar se ve bonito y agradable. (n = 12)
+- Que me lo recomendaron o me invitaron. (n = 11)
+- Los cafés y restaurantes. (n = 11)
+- Que se siente tranquilo y seguro. (n = 6)
+
+### p5. Comparando con hace 3 años, ¿cómo han cambiado los precios de las cosas (comida, tiendas, servicios) en este sector?
+
+- Están mucho más caros. (n = 36)
+- No conocía el sector hace 3 años, no puedo comparar. (n = 11)
+- Siguen más o menos igual. (n = 10)
+
+### p6. En los últimos 3 años, ¿cómo han cambiado los arriendos en este sector, según lo que usted ha visto o vivido?
+
+- No sé, no conozco lo suficiente el sector. (n = 29)
+- Han subido mucho. (n = 24)
+- Siguen más o menos igual. (n = 4)
+
+### p7. En los últimos 3 años, ¿ha visto que vecinos de siempre se hayan ido de este sector?
+
+- No sé, no conozco lo suficiente el sector. (n = 28)
+- Sí, algunos. (n = 14)
+- No, casi todos siguen aquí. (n = 9)
+- Sí, muchos. (n = 6)
+
+### p8. ¿Cómo cree que se llevan los negocios nuevos con los de toda la vida?
+
+- Se complementan: llega más gente y todos se benefician. (n = 21)
+- No tengo una opinión clara. (n = 17)
+- Cada uno va por su lado, casi no se relacionan. (n = 11)
+- Los nuevos le quitan clientes o espacio a los de siempre. (n = 8)
+
+### p9. En general, ¿cómo siente que ha cambiado este sector en los últimos 3 años?
+
+- Ha mejorado un poco. (n = 14)
+- Ha mejorado mucho. (n = 14)
+- No lo conocía antes, no puedo opinar. (n = 13)
+- Sigue igual, no veo diferencia. (n = 8)
+- Ha empeorado un poco. (n = 6)
+- Ha empeorado mucho. (n = 2)

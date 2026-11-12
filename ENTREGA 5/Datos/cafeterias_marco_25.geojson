@@ -1,0 +1,712 @@
+{
+ "type": "FeatureCollection",
+ "name": "cafeterias_marco_25",
+ "crs": {
+  "type": "name",
+  "properties": {
+   "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_001",
+    "nombre_establecimiento": "Brio Art Café (Coffee Master 2026)",
+    "zona_estudio": "La Macarena",
+    "barrio": "La Macarena",
+    "localidad": "Santa Fe",
+    "cod_barrio": "BAR_0301",
+    "direccion": "Cra. 4 #26B-91",
+    "valor_suelo_m2_2025_cop": 4850000,
+    "var_valor_suelo_16_25_pct": 64.5,
+    "precio_filtrado_ref_cop": 10500,
+    "rating_gmaps": 4.7,
+    "muestra_campo": "Sí",
+    "n_encuestas": 5,
+    "grupo_campo": "Muestra principal",
+    "nombre_corto": "Brio Art Café",
+    "barrio_std": "La Macarena"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0658,
+     4.613
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_002",
+    "nombre_establecimiento": "Luvina Librería Café",
+    "zona_estudio": "La Macarena",
+    "barrio": "La Macarena",
+    "localidad": "Santa Fe",
+    "cod_barrio": "BAR_0301",
+    "direccion": "Cra. 5 #26C-06",
+    "valor_suelo_m2_2025_cop": 4850000,
+    "var_valor_suelo_16_25_pct": 64.5,
+    "precio_filtrado_ref_cop": 9800,
+    "rating_gmaps": 4.7,
+    "muestra_campo": "Sí",
+    "n_encuestas": 5,
+    "grupo_campo": "Muestra principal",
+    "nombre_corto": "Luvina Librería",
+    "barrio_std": "La Macarena"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0668,
+     4.6133
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_003",
+    "nombre_establecimiento": "Ázimos Café & Panadería Artesanal",
+    "zona_estudio": "La Macarena",
+    "barrio": "La Macarena",
+    "localidad": "Santa Fe",
+    "cod_barrio": "BAR_0301",
+    "direccion": "Cra. 5 #26C-54",
+    "valor_suelo_m2_2025_cop": 4850000,
+    "var_valor_suelo_16_25_pct": 64.5,
+    "precio_filtrado_ref_cop": 9500,
+    "rating_gmaps": 4.6,
+    "muestra_campo": "Sí",
+    "n_encuestas": 3,
+    "grupo_campo": "Adicional con encuestas",
+    "nombre_corto": "Ázimos Café",
+    "barrio_std": "La Macarena"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0666,
+     4.6138
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_004",
+    "nombre_establecimiento": "Tintino Museo Nacional (Coffee Master 2026)",
+    "zona_estudio": "La Macarena",
+    "barrio": "San Martín / Macarena",
+    "localidad": "Santa Fe",
+    "cod_barrio": "BAR_0302",
+    "direccion": "Cra. 6 Bis #29-28",
+    "valor_suelo_m2_2025_cop": 4620000,
+    "var_valor_suelo_16_25_pct": 59.2,
+    "precio_filtrado_ref_cop": 9500,
+    "rating_gmaps": 4.8,
+    "muestra_campo": "No",
+    "n_encuestas": 0,
+    "grupo_campo": "Sin encuestas",
+    "nombre_corto": "Tintino Museo Nacional",
+    "barrio_std": "San Martín / Macarena"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0679,
+     4.6163
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_005",
+    "nombre_establecimiento": "Varietale Café - Federmán",
+    "zona_estudio": "Salitre - Nicolás de Federmán",
+    "barrio": "Nicolás de Federmán",
+    "localidad": "Teusaquillo",
+    "cod_barrio": "BAR_1303",
+    "direccion": "Cl. 57B #35-26",
+    "valor_suelo_m2_2025_cop": 5450000,
+    "var_valor_suelo_16_25_pct": 62.4,
+    "precio_filtrado_ref_cop": 10500,
+    "rating_gmaps": 4.8,
+    "muestra_campo": "Sí",
+    "n_encuestas": 4,
+    "grupo_campo": "Muestra principal",
+    "nombre_corto": "Varietale Café - Federmán",
+    "barrio_std": "Nicolás de Federmán"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0805,
+     4.6455
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_006",
+    "nombre_establecimiento": "Nativa Café - Nicolás de Federmán",
+    "zona_estudio": "Salitre - Nicolás de Federmán",
+    "barrio": "Nicolás de Federmán",
+    "localidad": "Teusaquillo",
+    "cod_barrio": "BAR_1303",
+    "direccion": "Cl. 58A #36A-16",
+    "valor_suelo_m2_2025_cop": 5450000,
+    "var_valor_suelo_16_25_pct": 62.4,
+    "precio_filtrado_ref_cop": 10000,
+    "rating_gmaps": 4.7,
+    "muestra_campo": "Sí",
+    "n_encuestas": 3,
+    "grupo_campo": "Muestra principal",
+    "nombre_corto": "Nativa Café - Nicolás de Federmán",
+    "barrio_std": "Nicolás de Federmán"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0816,
+     4.6468
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_007",
+    "nombre_establecimiento": "Colo Coffee - Gran Estación / Ciudad Salitre",
+    "zona_estudio": "Salitre - Nicolás de Federmán",
+    "barrio": "Ciudad Salitre Oriental",
+    "localidad": "Teusaquillo",
+    "cod_barrio": "BAR_1304",
+    "direccion": "Av. Cl. 26 #62-47",
+    "valor_suelo_m2_2025_cop": 6350000,
+    "var_valor_suelo_16_25_pct": 58.6,
+    "precio_filtrado_ref_cop": 11500,
+    "rating_gmaps": 4.8,
+    "muestra_campo": "Sí",
+    "n_encuestas": 0,
+    "grupo_campo": "Sin encuestas",
+    "nombre_corto": "Colo Coffee - Gran Estación / Ciudad Salitre",
+    "barrio_std": "Ciudad Salitre Oriental"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.1018,
+     4.6472
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_008",
+    "nombre_establecimiento": "Azahar Coffee - Paralelo 26 (Salitre)",
+    "zona_estudio": "Salitre - Nicolás de Federmán",
+    "barrio": "Ciudad Salitre Oriental",
+    "localidad": "Teusaquillo",
+    "cod_barrio": "BAR_1304",
+    "direccion": "Av. El Dorado #68B-85",
+    "valor_suelo_m2_2025_cop": 6350000,
+    "var_valor_suelo_16_25_pct": 58.6,
+    "precio_filtrado_ref_cop": 12000,
+    "rating_gmaps": 4.7,
+    "muestra_campo": "No",
+    "n_encuestas": 0,
+    "grupo_campo": "Sin encuestas",
+    "nombre_corto": "Azahar Coffee - Paralelo 26 (Salitre)",
+    "barrio_std": "Ciudad Salitre Oriental"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.1065,
+     4.6582
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_009",
+    "nombre_establecimiento": "Varietale Café - Javeriana (Coffee Master 2026)",
+    "zona_estudio": "Chapinero Alto y Pardo Rubio",
+    "barrio": "Sucre / Marly",
+    "localidad": "Chapinero",
+    "cod_barrio": "BAR_0201",
+    "direccion": "Cl. 41 #8-43",
+    "valor_suelo_m2_2025_cop": 5400000,
+    "var_valor_suelo_16_25_pct": 71.4,
+    "precio_filtrado_ref_cop": 10500,
+    "rating_gmaps": 4.8,
+    "muestra_campo": "Sí",
+    "n_encuestas": 4,
+    "grupo_campo": "Muestra principal",
+    "nombre_corto": "Varietale Café - Javeriana",
+    "barrio_std": "Sucre / Marly"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0641,
+     4.6291
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_010",
+    "nombre_establecimiento": "Varietale Casa 57 (Coffee Master 2026)",
+    "zona_estudio": "Chapinero Alto y Pardo Rubio",
+    "barrio": "Chapinero Alto",
+    "localidad": "Chapinero",
+    "cod_barrio": "BAR_0202",
+    "direccion": "Cra. 4A #57-02",
+    "valor_suelo_m2_2025_cop": 5650000,
+    "var_valor_suelo_16_25_pct": 71.4,
+    "precio_filtrado_ref_cop": 11000,
+    "rating_gmaps": 4.8,
+    "muestra_campo": "Sí",
+    "n_encuestas": 3,
+    "grupo_campo": "Adicional con encuestas",
+    "nombre_corto": "Varietale Casa 57",
+    "barrio_std": "Chapinero Alto"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0582,
+     4.6422
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_011",
+    "nombre_establecimiento": "Café Amor Perfecto - Chapinero Alto",
+    "zona_estudio": "Chapinero Alto y Pardo Rubio",
+    "barrio": "Granada / Pardo Rubio",
+    "localidad": "Chapinero",
+    "cod_barrio": "BAR_0203",
+    "direccion": "Cra. 4 #66-46",
+    "valor_suelo_m2_2025_cop": 6100000,
+    "var_valor_suelo_16_25_pct": 68.9,
+    "precio_filtrado_ref_cop": 12000,
+    "rating_gmaps": 4.8,
+    "muestra_campo": "Sí",
+    "n_encuestas": 7,
+    "grupo_campo": "Muestra principal",
+    "nombre_corto": "Amor Perfecto - Chapinero Alto",
+    "barrio_std": "Granada / Pardo Rubio"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0554,
+     4.6495
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_012",
+    "nombre_establecimiento": "Libertario Coffee Roasters - Zona G",
+    "zona_estudio": "Chapinero Alto y Pardo Rubio",
+    "barrio": "Emaús / Zona G",
+    "localidad": "Chapinero",
+    "cod_barrio": "BAR_0204",
+    "direccion": "Cl. 70A #5-37",
+    "valor_suelo_m2_2025_cop": 6450000,
+    "var_valor_suelo_16_25_pct": 70.2,
+    "precio_filtrado_ref_cop": 12500,
+    "rating_gmaps": 4.9,
+    "muestra_campo": "Sí",
+    "n_encuestas": 0,
+    "grupo_campo": "Sin encuestas",
+    "nombre_corto": "Libertario - Zona G",
+    "barrio_std": "Emaús / Zona G"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0546,
+     4.6531
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_013",
+    "nombre_establecimiento": "Masa - Sede El Nogal",
+    "zona_estudio": "El Refugio y borde oriental",
+    "barrio": "El Nogal (UPZ El Refugio)",
+    "localidad": "Chapinero",
+    "cod_barrio": "BAR_0205",
+    "direccion": "Cl. 81 #9-12",
+    "valor_suelo_m2_2025_cop": 8900000,
+    "var_valor_suelo_16_25_pct": 54.0,
+    "precio_filtrado_ref_cop": 13000,
+    "rating_gmaps": 4.7,
+    "muestra_campo": "Sí",
+    "n_encuestas": 2,
+    "grupo_campo": "Muestra principal",
+    "nombre_corto": "Masa - El Nogal",
+    "barrio_std": "El Nogal"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0521,
+     4.6642
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_014",
+    "nombre_establecimiento": "Café 18 - Sede Rosales (Coffee Master 2026)",
+    "zona_estudio": "El Refugio y borde oriental",
+    "barrio": "Los Rosales (UPZ El Refugio)",
+    "localidad": "Chapinero",
+    "cod_barrio": "BAR_0206",
+    "direccion": "Cra. 5 #71-45 L. 104",
+    "valor_suelo_m2_2025_cop": 8450000,
+    "var_valor_suelo_16_25_pct": 51.5,
+    "precio_filtrado_ref_cop": 12500,
+    "rating_gmaps": 4.8,
+    "muestra_campo": "Sí",
+    "n_encuestas": 1,
+    "grupo_campo": "Muestra principal",
+    "nombre_corto": "Café 18 - Rosales",
+    "barrio_std": "Los Rosales (UPZ El Refugio)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0535,
+     4.6538
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_015",
+    "nombre_establecimiento": "Azahar Coffee - Parque 93",
+    "zona_estudio": "El Refugio y borde oriental",
+    "barrio": "Chicó Norte / Parque 93",
+    "localidad": "Chapinero",
+    "cod_barrio": "BAR_0207",
+    "direccion": "Cl. 93B #13-91",
+    "valor_suelo_m2_2025_cop": 9200000,
+    "var_valor_suelo_16_25_pct": 49.8,
+    "precio_filtrado_ref_cop": 14000,
+    "rating_gmaps": 4.8,
+    "muestra_campo": "No",
+    "n_encuestas": 0,
+    "grupo_campo": "Sin encuestas",
+    "nombre_corto": "Azahar Coffee - Parque 93",
+    "barrio_std": "Chicó Norte / Parque 93"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0492,
+     4.6775
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_016",
+    "nombre_establecimiento": "Colo Coffee - Sede Chapinero",
+    "zona_estudio": "Chapinero central y Zona Rosa",
+    "barrio": "Chapinero Central",
+    "localidad": "Chapinero",
+    "cod_barrio": "BAR_0208",
+    "direccion": "Cl. 59 #7-07",
+    "valor_suelo_m2_2025_cop": 5950000,
+    "var_valor_suelo_16_25_pct": 63.0,
+    "precio_filtrado_ref_cop": 11000,
+    "rating_gmaps": 4.7,
+    "muestra_campo": "Sí",
+    "n_encuestas": 3,
+    "grupo_campo": "Muestra principal",
+    "nombre_corto": "Colo Coffee - Chapinero",
+    "barrio_std": "Chapinero Central"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0608,
+     4.6447
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_017",
+    "nombre_establecimiento": "Libertario Coffee Roasters - Calle 85",
+    "zona_estudio": "Chapinero central y Zona Rosa",
+    "barrio": "El Retiro / Zona Rosa",
+    "localidad": "Chapinero",
+    "cod_barrio": "BAR_0209",
+    "direccion": "Cra. 13 #85-13",
+    "valor_suelo_m2_2025_cop": 8600000,
+    "var_valor_suelo_16_25_pct": 53.2,
+    "precio_filtrado_ref_cop": 13500,
+    "rating_gmaps": 4.9,
+    "muestra_campo": "Sí",
+    "n_encuestas": 1,
+    "grupo_campo": "Muestra principal",
+    "nombre_corto": "Libertario - Calle 85",
+    "barrio_std": "El Retiro / Zona Rosa"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0548,
+     4.6698
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_018",
+    "nombre_establecimiento": "Tropicalia Coffee",
+    "zona_estudio": "Chapinero central y Zona Rosa",
+    "barrio": "El Nogal / Zona T",
+    "localidad": "Chapinero",
+    "cod_barrio": "BAR_0205",
+    "direccion": "Cl. 81A #8-23",
+    "valor_suelo_m2_2025_cop": 8750000,
+    "var_valor_suelo_16_25_pct": 54.5,
+    "precio_filtrado_ref_cop": 13000,
+    "rating_gmaps": 4.9,
+    "muestra_campo": "Sí",
+    "n_encuestas": 0,
+    "grupo_campo": "Sin encuestas",
+    "nombre_corto": "Tropicalia Coffee",
+    "barrio_std": "El Nogal"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0518,
+     4.665
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_019",
+    "nombre_establecimiento": "Casa Café Cultor - Quinta Camacho",
+    "zona_estudio": "Quinta Camacho y Teusaquillo",
+    "barrio": "Quinta Camacho",
+    "localidad": "Chapinero",
+    "cod_barrio": "BAR_0210",
+    "direccion": "Cl. 70A #9-44",
+    "valor_suelo_m2_2025_cop": 6500000,
+    "var_valor_suelo_16_25_pct": 66.8,
+    "precio_filtrado_ref_cop": 11500,
+    "rating_gmaps": 4.8,
+    "muestra_campo": "Sí",
+    "n_encuestas": 2,
+    "grupo_campo": "Muestra principal",
+    "nombre_corto": "Casa Café Cultor - Quinta Camacho",
+    "barrio_std": "Quinta Camacho"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0593,
+     4.6558
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_020",
+    "nombre_establecimiento": "Wilborada 1047 - Café Cultor",
+    "zona_estudio": "Quinta Camacho y Teusaquillo",
+    "barrio": "Quinta Camacho",
+    "localidad": "Chapinero",
+    "cod_barrio": "BAR_0210",
+    "direccion": "Cl. 71 #10-47",
+    "valor_suelo_m2_2025_cop": 6500000,
+    "var_valor_suelo_16_25_pct": 66.8,
+    "precio_filtrado_ref_cop": 11500,
+    "rating_gmaps": 4.8,
+    "muestra_campo": "Sí",
+    "n_encuestas": 3,
+    "grupo_campo": "Muestra principal",
+    "nombre_corto": "Wilborada 1047 - Café Cultor",
+    "barrio_std": "Quinta Camacho"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0589,
+     4.6565
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_021",
+    "nombre_establecimiento": "Colo Coffee - Quinta Camacho",
+    "zona_estudio": "Quinta Camacho y Teusaquillo",
+    "barrio": "Quinta Camacho",
+    "localidad": "Chapinero",
+    "cod_barrio": "BAR_0210",
+    "direccion": "Cra. 10A #70-48",
+    "valor_suelo_m2_2025_cop": 6500000,
+    "var_valor_suelo_16_25_pct": 66.8,
+    "precio_filtrado_ref_cop": 11500,
+    "rating_gmaps": 4.8,
+    "muestra_campo": "Sí",
+    "n_encuestas": 1,
+    "grupo_campo": "Adicional con encuestas",
+    "nombre_corto": "Colo Coffee - Quinta Camacho",
+    "barrio_std": "Quinta Camacho"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0596,
+     4.6561
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_022",
+    "nombre_establecimiento": "Quipile Coffee - Parkway (Coffee Master 2026)",
+    "zona_estudio": "Quinta Camacho y Teusaquillo",
+    "barrio": "La Soledad (Parkway)",
+    "localidad": "Teusaquillo",
+    "cod_barrio": "BAR_1301",
+    "direccion": "Av. Cra. 24 #42-71",
+    "valor_suelo_m2_2025_cop": 5100000,
+    "var_valor_suelo_16_25_pct": 61.4,
+    "precio_filtrado_ref_cop": 9800,
+    "rating_gmaps": 4.7,
+    "muestra_campo": "No",
+    "n_encuestas": 0,
+    "grupo_campo": "Sin encuestas",
+    "nombre_corto": "Quipile Coffee - Parkway",
+    "barrio_std": "La Soledad (Parkway)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0754,
+     4.6328
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_023",
+    "nombre_establecimiento": "Colo Coffee - Usaquén",
+    "zona_estudio": "Usaquén",
+    "barrio": "Usaquén Centro Histórico",
+    "localidad": "Usaquén",
+    "cod_barrio": "BAR_0101",
+    "direccion": "Cra. 6A #117-26",
+    "valor_suelo_m2_2025_cop": 7400000,
+    "var_valor_suelo_16_25_pct": 60.5,
+    "precio_filtrado_ref_cop": 12500,
+    "rating_gmaps": 4.8,
+    "muestra_campo": "Sí",
+    "n_encuestas": 9,
+    "grupo_campo": "Muestra principal",
+    "nombre_corto": "Colo Coffee - Usaquén",
+    "barrio_std": "Usaquén Centro Histórico"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0308,
+     4.6948
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_024",
+    "nombre_establecimiento": "Catación Pública - Usaquén",
+    "zona_estudio": "Usaquén",
+    "barrio": "Usaquén Centro Histórico",
+    "localidad": "Usaquén",
+    "cod_barrio": "BAR_0101",
+    "direccion": "Cl. 120A #3A-47",
+    "valor_suelo_m2_2025_cop": 7400000,
+    "var_valor_suelo_16_25_pct": 60.5,
+    "precio_filtrado_ref_cop": 13000,
+    "rating_gmaps": 4.9,
+    "muestra_campo": "Sí",
+    "n_encuestas": 1,
+    "grupo_campo": "Muestra principal",
+    "nombre_corto": "Catación Pública - Usaquén",
+    "barrio_std": "Usaquén Centro Histórico"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0282,
+     4.6966
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id_cafe": "CAF_025",
+    "nombre_establecimiento": "Abasto Café & Restaurante - Usaquén",
+    "zona_estudio": "Usaquén",
+    "barrio": "Usaquén Centro Histórico",
+    "localidad": "Usaquén",
+    "cod_barrio": "BAR_0101",
+    "direccion": "Cl. 118 #5-41",
+    "valor_suelo_m2_2025_cop": 7400000,
+    "var_valor_suelo_16_25_pct": 60.5,
+    "precio_filtrado_ref_cop": 12000,
+    "rating_gmaps": 4.7,
+    "muestra_campo": "No",
+    "n_encuestas": 0,
+    "grupo_campo": "Sin encuestas",
+    "nombre_corto": "Abasto Café & Restaurante - Usaquén",
+    "barrio_std": "Usaquén Centro Histórico"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0298,
+     4.6951
+    ]
+   }
+  }
+ ]
+}

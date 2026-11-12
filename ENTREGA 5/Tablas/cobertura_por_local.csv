@@ -1,0 +1,26 @@
+﻿id_cafe,nombre_establecimiento,zona_estudio,barrio,cod_barrio,muestra_campo,grupo_campo,n_encuestas
+CAF_009,Varietale Café - Javeriana (Coffee Master 2026),Chapinero Alto y Pardo Rubio,Sucre / Marly,BAR_0201,Sí,Muestra principal,4
+CAF_010,Varietale Casa 57 (Coffee Master 2026),Chapinero Alto y Pardo Rubio,Chapinero Alto,BAR_0202,Sí,Adicional con encuestas,3
+CAF_011,Café Amor Perfecto - Chapinero Alto,Chapinero Alto y Pardo Rubio,Granada / Pardo Rubio,BAR_0203,Sí,Muestra principal,7
+CAF_012,Libertario Coffee Roasters - Zona G,Chapinero Alto y Pardo Rubio,Emaús / Zona G,BAR_0204,Sí,Sin encuestas,0
+CAF_016,Colo Coffee - Sede Chapinero,Chapinero central y Zona Rosa,Chapinero Central,BAR_0208,Sí,Muestra principal,3
+CAF_017,Libertario Coffee Roasters - Calle 85,Chapinero central y Zona Rosa,El Retiro / Zona Rosa,BAR_0209,Sí,Muestra principal,1
+CAF_018,Tropicalia Coffee,Chapinero central y Zona Rosa,El Nogal / Zona T,BAR_0205,Sí,Sin encuestas,0
+CAF_013,Masa - Sede El Nogal,El Refugio y borde oriental,El Nogal (UPZ El Refugio),BAR_0205,Sí,Muestra principal,2
+CAF_014,Café 18 - Sede Rosales (Coffee Master 2026),El Refugio y borde oriental,Los Rosales (UPZ El Refugio),BAR_0206,Sí,Muestra principal,1
+CAF_015,Azahar Coffee - Parque 93,El Refugio y borde oriental,Chicó Norte / Parque 93,BAR_0207,No,Sin encuestas,0
+CAF_001,Brio Art Café (Coffee Master 2026),La Macarena,La Macarena,BAR_0301,Sí,Muestra principal,5
+CAF_002,Luvina Librería Café,La Macarena,La Macarena,BAR_0301,Sí,Muestra principal,5
+CAF_003,Ázimos Café & Panadería Artesanal,La Macarena,La Macarena,BAR_0301,Sí,Adicional con encuestas,3
+CAF_004,Tintino Museo Nacional (Coffee Master 2026),La Macarena,San Martín / Macarena,BAR_0302,No,Sin encuestas,0
+CAF_019,Casa Café Cultor - Quinta Camacho,Quinta Camacho y Teusaquillo,Quinta Camacho,BAR_0210,Sí,Muestra principal,2
+CAF_020,Wilborada 1047 - Café Cultor,Quinta Camacho y Teusaquillo,Quinta Camacho,BAR_0210,Sí,Muestra principal,3
+CAF_021,Colo Coffee - Quinta Camacho,Quinta Camacho y Teusaquillo,Quinta Camacho,BAR_0210,Sí,Adicional con encuestas,1
+CAF_022,Quipile Coffee - Parkway (Coffee Master 2026),Quinta Camacho y Teusaquillo,La Soledad (Parkway),BAR_1301,No,Sin encuestas,0
+CAF_005,Varietale Café - Federmán,Salitre - Nicolás de Federmán,Nicolás de Federmán,BAR_1303,Sí,Muestra principal,4
+CAF_006,Nativa Café - Nicolás de Federmán,Salitre - Nicolás de Federmán,Nicolás de Federmán,BAR_1303,Sí,Muestra principal,3
+CAF_007,Colo Coffee - Gran Estación / Ciudad Salitre,Salitre - Nicolás de Federmán,Ciudad Salitre Oriental,BAR_1304,Sí,Sin encuestas,0
+CAF_008,Azahar Coffee - Paralelo 26 (Salitre),Salitre - Nicolás de Federmán,Ciudad Salitre Oriental,BAR_1304,No,Sin encuestas,0
+CAF_023,Colo Coffee - Usaquén,Usaquén,Usaquén Centro Histórico,BAR_0101,Sí,Muestra principal,9
+CAF_024,Catación Pública - Usaquén,Usaquén,Usaquén Centro Histórico,BAR_0101,Sí,Muestra principal,1
+CAF_025,Abasto Café & Restaurante - Usaquén,Usaquén,Usaquén Centro Histórico,BAR_0101,No,Sin encuestas,0

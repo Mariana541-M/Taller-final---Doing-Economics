@@ -1,0 +1,17 @@
+﻿cod_barrio,barrio,zona_estudio,cafes_inventario,valor_suelo_m2_2025_cop,var_valor_suelo_16_25_pct,precio_filtrado_medio,encuestas_validas
+BAR_0101,Usaquén Centro Histórico,Usaquén,3,7400000.0,60.5,12500.0,10
+BAR_0201,Sucre / Marly,Chapinero Alto y Pardo Rubio,1,5400000.0,71.4,10500.0,4
+BAR_0202,Chapinero Alto,Chapinero Alto y Pardo Rubio,1,5650000.0,71.4,11000.0,3
+BAR_0203,Granada / Pardo Rubio,Chapinero Alto y Pardo Rubio,1,6100000.0,68.9,12000.0,7
+BAR_0204,Emaús / Zona G,Chapinero Alto y Pardo Rubio,1,6450000.0,70.2,12500.0,0
+BAR_0205,El Nogal,El Refugio y borde oriental,2,8825000.0,54.2,13000.0,2
+BAR_0206,Los Rosales (UPZ El Refugio),El Refugio y borde oriental,1,8450000.0,51.5,12500.0,1
+BAR_0207,Chicó Norte / Parque 93,El Refugio y borde oriental,1,9200000.0,49.8,14000.0,0
+BAR_0208,Chapinero Central,Chapinero central y Zona Rosa,1,5950000.0,63.0,11000.0,3
+BAR_0209,El Retiro / Zona Rosa,Chapinero central y Zona Rosa,1,8600000.0,53.2,13500.0,1
+BAR_0210,Quinta Camacho,Quinta Camacho y Teusaquillo,3,6500000.0,66.8,11500.0,6
+BAR_0301,La Macarena,La Macarena,3,4850000.0,64.5,9933.3,13
+BAR_0302,San Martín / Macarena,La Macarena,1,4620000.0,59.2,9500.0,0
+BAR_1301,La Soledad (Parkway),Quinta Camacho y Teusaquillo,1,5100000.0,61.4,9800.0,0
+BAR_1303,Nicolás de Federmán,Salitre - Nicolás de Federmán,2,5450000.0,62.4,10250.0,7
+BAR_1304,Ciudad Salitre Oriental,Salitre - Nicolás de Federmán,2,6350000.0,58.6,11750.0,0
